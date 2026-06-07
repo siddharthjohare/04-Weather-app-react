@@ -8,23 +8,8 @@ A modern, responsive, and performance-optimized weather tracking application bui
 👉 **[Click Here to View Live Weather Dashboard](https://04-weather-app-react.vercel.app/)**
 
 ---
+**🛠️ Technical Implementation & Core Concepts**
 
-### 🎮 Functional Lifecycle & Architecture
-
-The application flow strictly follows declarative React component principles:
-```text
-Component Mounts (useEffect)
-       ↓
-Checks LocalStorage for 'savedCity' (Defaults to "Delhi" if empty)
-       ↓
-getWeather() async function fires Fetch API payload
-       ↓
-JSON mapped into 'weather' state OR caught inside 'error' state boundary
-       ↓
-Dynamic layout rendering loop tracks UI theme switches (.container.dark)
-
----
-🛠️ Technical Implementation & Core Concepts
 This repository serves as a practical assessment of modular UI structuring and state lifecycle syncing:
 
 Declarative State Hooks (useState): Managed independent rendering matrices tracking city metrics, operational loaders (loading), validation errors (error), and layout configurations (dark).
@@ -39,7 +24,7 @@ Iterative Loop Mapping: Parsed multidimensional JSON telemetry streams using sta
 
 Advanced Responsive Interface: Programmed a modular glassmorphism visual viewport (backdrop-filter: blur) containing interactive grid styling setups, micro-interaction transformations, and adaptive CSS media blocks targeting viewport scale constraints under 520px.
 
-📦 Tech Stack Used
+**📦 Tech Stack Used**
 Core UI Engine: React.js (Functional Architecture)
 
 Build Architecture: Vite Bundler Engine
@@ -50,7 +35,14 @@ API Engine: wttr.in Automated Global Weather Data Provider
 
 Data Caching: Browser LocalStorage Web API
 
-📂 Codebase Folder Layout
+**📂 Codebase Folder Layout**
+src/App.jsx - Master entry component containing mathematical data fetch handlers, state machines, and view fragments.
+
+src/App.css - UI layout system implementing cross-platform media view adaptive grids and custom dark mode layout settings.
+
+src/main.jsx - Root execution node mapping the functional DOM setup directly into the browser viewport canvas.
+
+**📂 Codebase Folder Layout**
 src/App.jsx - Master entry component containing mathematical data fetch handlers, state machines, and view fragments.
 
 src/App.css - UI layout system implementing cross-platform media view adaptive grids and custom dark mode layout settings.
