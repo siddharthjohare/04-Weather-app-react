@@ -48,3 +48,19 @@ src/App.jsx - Master entry component containing mathematical data fetch handlers
 src/App.css - UI layout system implementing cross-platform media view adaptive grids and custom dark mode layout settings.
 
 src/main.jsx - Root execution node mapping the functional DOM setup directly into the browser viewport canvas.
+
+---
+
+### 🎮 Functional Lifecycle & Architecture
+
+The application flow strictly follows declarative React component principles:
+```text
+Component Mounts (useEffect)
+       ↓
+Checks LocalStorage for 'savedCity' (Defaults to "Delhi" if empty)
+       ↓
+getWeather() async function fires Fetch API payload
+       ↓
+JSON mapped into 'weather' state OR caught inside 'error' state boundary
+       ↓
+Dynamic layout rendering loop tracks UI theme switches (.container.dark)
